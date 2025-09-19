@@ -1,5 +1,4 @@
-# wordly-SPA-summative
-# Wordly SPA
+# Wordly SPA Summative Lab
 
 # A simple Single Page Application (SPA) dictionary app built with HTML, CSS, and JavaScript.
 # Uses the Free Dictionary API (https://dictionaryapi.dev/) to fetch word definitions, pronunciation, and audio.
