@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #04e635;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #aeb8c7;
+}
+
+button {
+    position: relative;
+    padding: 3.5px 15px;
+    margin-left: 1px;
+    background: repeating-linear-gradient(white,
+            white 2px,
+            #ddd 3px);
+    color: #222;
+    border: 1px solid #a67c52;
+    border-right: none;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.audio-btn {
+    background: #e0e0e0;
+    color: #090909;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 1.5px 3px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.audio-btn:hover {
+    background: #000000b3;
+    color: #fff;
+    border: 0.5px solid #fff;
+}
