@@ -1,1 +1,55 @@
-{}
+{
+  "proper_nouns": [
+    "London",
+    "Paris",
+    "New York",
+    "Einstein",
+    "Shakespeare",
+    "Microsoft",
+    "NASA",
+    "Toyota",
+    "Ferrari",
+    "Coca-Cola",
+    "Nike",
+    "Adidas",
+    "Instagram",
+    "Egypt",
+    "Berlin"
+  ],
+  "slang": [
+    "tbh",
+    "YOLO",
+    "slangin"
+  ],
+  "function_words": [
+    "for"
+  ],
+  "edge_cases": [
+    "zyxwvut",
+    "COVID-19",
+    "GPT",
+    "emojiis",
+    "googlymoogly",
+    "unicornsaurus",
+    "testwordnotreal",
+    "asdfghjkl",
+    "123abc",
+    "h4ck3r",
+    "pizzaaaaaaa",
+    "fakewordzz",
+    "bananaaaas",
+    "notaword",
+    "qqqqqqqqq",
+    "zzzzzzzzz",
+    "asdfasdfasdf",
+    "loremipsum",
+    "fakeentry",
+    "test12345",
+    "gibberishword",
+    "nonsenseinput",
+    "brokenstring",
+    "randomchars",
+    "eGyPt",
+    "LoNDoN"
+  ]
+}
