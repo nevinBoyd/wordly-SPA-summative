@@ -53,4 +53,6 @@
 
 # Missing words are saved to missing.json by category.
 
-# Full instructions: Dev_Tool_Instructions.txt.
+# Full instructions: dev-tools/Dev_Tool_Instructions.txt
+
+# See developement notes: /Wordly SPA Summative Lab/ NOTES.md
