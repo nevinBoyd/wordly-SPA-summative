@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #04e635;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #aeb8c7;
+}
+
+button {
+    position: relative;
+    padding: 3.5px 15px;
+    margin-left: 1px;
+    background: repeating-linear-gradient(white,
+            white 2px,
+            #ddd 3px);
+    color: #222;
+    border: 1px solid #a67c52;
+    border-right: none;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px 0 0 3px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.audio-btn {
+    background: #222;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-size: 0.65em;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #FFD700;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.audio-btn:hover {
+    background: #000000b3;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.word-entry {
+    text-align: left;
+    margin: 15px auto;
+    max-width: 800px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding: 12px;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    background: #111;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    color: #ddd;
+}
+
+
+.word-title {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 1em;
+    gap: 6px;
+}
+
+.word-title .label {
+    grid-column: 1;
+    color: #FFD700;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.word-title .value {
+    grid-column: 2;
+    color: #ddd;
+    font-size: 0.95em;
+    text-align: left;
+    overflow-wrap: break-word
+}
+
+.word-right {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.phonetics,
+.origin,
+.definition {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 6px;
+    margin: 6px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.definition {
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #333;
+}
+
+.definition:last-child {
+    border-bottom: none;
+}
+
+.phonetics .label,
+.definition .label,
+.origin .label {
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.phonetics .label {
+    color: #87CEFA;
+}
+
+.definition .label {
+    color: #FFA07A;
+}
+
+.origin .label {
+    color: #98FB98;
+}
+
+.phonetics .value,
+.definition .value,
+.origin .value {
+    color: #ddd;
+    font-size: 0.95em;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.meaning-group {
+    border-bottom: 1px dotted #333;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.meaning-group:last-child {
+    border-bottom: none;
+}
