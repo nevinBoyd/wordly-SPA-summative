@@ -58,17 +58,13 @@ function displayResults(wordData) {
   }
 
   let html = `
-  <div class="word-entry">
-    <div class="word-title">
-      <span class="label">WORD:</span> 
-      <span class="value">${word}</span>
-      <div class="word-right">${audioBtn ? `${audioBtn}` : ""}</div>
-    </div>
-      <div class="word-right">
-        ${audioBtn ? `${audioBtn}` : ""}
+    <div class="word-entry">
+      <div class="word-title">
+        <span class="label">WORD:</span> 
+        <span class="value">${word}</span>
+        <div class="word-right">${audioBtn ? `${audioBtn}` : ""}</div>
       </div>
-    </div>
-    ${phoneticText ? `<div class="phonetics"><span class="label">PHONETICS:</span> <span class="value">${phoneticText}</span></div>` : ""}
+      ${phoneticText ? `<div class="phonetics"><span class="label">PHONETICS:</span> <span class="value">${phoneticText}</span></div>` : ""}
   `;
 
   meanings.forEach((meaning) => {
@@ -81,8 +77,7 @@ function displayResults(wordData) {
         <div class="definition">
           <span class="label">TYPE:</span>
           <span class="value">${meaning.partOfSpeech}</span>
-        </div>
-      `;
+        </div>`;
     }
 
     if (firstDef.definition) {
@@ -90,8 +85,7 @@ function displayResults(wordData) {
         <div class="definition">
           <span class="label">DEFINE:</span>
           <span class="value">${firstDef.definition}</span>
-        </div>
-      `;
+        </div>`;
     }
 
     if (firstDef.example && firstDef.example !== "undefined") {
@@ -99,9 +93,9 @@ function displayResults(wordData) {
         <div class="definition">
           <span class="label">EXAMPLE:</span>
           <span class="value">${firstDef.example}</span>
-        </div>
-      `;
+        </div>`;
     }
+
 
     html += `</div>`;
 

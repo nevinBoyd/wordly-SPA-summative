@@ -15,32 +15,71 @@ body {
 
 header h1 {
     margin-bottom: 20px;
-    color: #04e635;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #FFD700;
+    background: linear-gradient(90deg, #fdf4b4, #f7d022, #fdfdfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7),
+        0 0 20px rgba(0, 191, 255, 0.6);
+
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 213, 0, 0.6),
+            0 0 15px rgba(255, 255, 255, 0.9);
+    }
+
+    to {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 1),
+            0 0 30px rgba(255, 255, 255, 0.9);
+    }
 }
 
 form {
     margin-bottom: 20px;
 }
 
-button:hover {
-    background: #aeb8c7;
+#search-input {
+    padding: 6px 10px;
+    border: 1px solid #FFD700;
+    border-radius: 6px;
+    background: #111;
+    color: #fff;
+    font-size: 0.9em;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-button {
-    position: relative;
-    padding: 3.5px 15px;
-    margin-left: 1px;
-    background: repeating-linear-gradient(white,
-            white 2px,
-            #ddd 3px);
-    color: #222;
-    border: 1px solid #a67c52;
-    border-right: none;
-    font-family: "Georgia", serif;
+#search-input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+}
+
+.search-btn {
+    background: #222;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.85em;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 3px 0 0 3px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    background: #000000b3;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 .audio-btn {
